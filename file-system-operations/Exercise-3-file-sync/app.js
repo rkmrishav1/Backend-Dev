@@ -18,7 +18,7 @@ const files = fs.readdirSync(dir1);
 files.forEach(file => {
   const src = path.join(dir1, file);
   const dest = path.join(dir2, file);
-
+//hello
   if (!fs.existsSync(dest)) {
     fs.copyFileSync(src, dest);
     console.log(`Copied: ${file}`);
